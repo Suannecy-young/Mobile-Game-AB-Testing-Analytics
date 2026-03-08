@@ -1,3 +1,6 @@
+[English](README.md) | [简体中文](README_zh.md)
+
+---
 # Mobile Game A/B Testing & Data Quality Monitoring
 
 ![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20SciPy-blue)

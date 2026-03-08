@@ -16,7 +16,7 @@ As a Data Analyst, I analyzed over **90,000 player records** to assess the updat
 
 ---
 
-## 🛠️ 1. Data Cleaning & Outlier Handling
+## 1. Data Cleaning & Outlier Handling
 **Issue:** The raw dataset contained extreme outliers (e.g., bot accounts logging thousands of game rounds), which would skew the P-value of our hypothesis testing.
 
 **Solution:** To avoid manually hardcoding thresholds, I used **GitHub Copilot** to assist in writing an automated outlier removal script based on the **IQR (Interquartile Range)** method.
@@ -28,7 +28,7 @@ As a Data Analyst, I analyzed over **90,000 player records** to assess the updat
 
 ---
 
-## 📊 2. Retention Analysis (Bootstrapping & Z-Test)
+## 2. Retention Analysis (Bootstrapping & Z-Test)
 To evaluate 1-day and 7-day retention rates, I cross-validated the results using two statistical methods:
 
 ### Bootstrapping (1,000 Iterations)
@@ -41,7 +41,7 @@ By resampling the dataset 1,000 times with replacement, we observed the distribu
 
 ---
 
-## 🚫 3. Conclusion & Recommendation: NO-GO
+## 3. Conclusion & Recommendation: NO-GO
 
 Based on the data, I recommended that the product team **reject this update** and keep the gate at Level 30.
 
@@ -49,6 +49,6 @@ Based on the data, I recommended that the product team **reject this update** an
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 * `/data/cookie_cats.csv`: The raw dataset (90,189 player records).
 * `/ab_test_analysis.ipynb`: The core analysis notebook (contains outlier cleaning, EDA, Bootstrapping, and Hypothesis Testing logic).

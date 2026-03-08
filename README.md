@@ -2,7 +2,7 @@
 
 ---
 
-# 🎲 Mobile Game A/B Testing Analysis
+# Mobile Game A/B Testing Analysis
 
 ![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20SciPy-blue)
 ![Statistics](https://img.shields.io/badge/Statistics-A%2FB%20Test%20%7C%20Z--Test-green)

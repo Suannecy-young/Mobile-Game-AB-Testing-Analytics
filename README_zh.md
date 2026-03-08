@@ -2,7 +2,7 @@
 
 ---
 
-# 🎲 移动端游戏 A/B 测试分析
+# 移动端游戏 A/B 测试分析
 
 ![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20SciPy-blue)
 ![Statistics](https://img.shields.io/badge/Statistics-A%2FB%20Test%20%7C%20Z--Test-green)
@@ -16,7 +16,7 @@
 
 ---
 
-## 🛠️ 1. 数据清洗与异常值处理
+## 1. 数据清洗与异常值处理
 **问题：** 原始数据集中存在极端的异常值（比如疑似脚本刷出的上万局游戏记录），这些脏数据会直接影响假设检验 P-value 的准确性。
 
 **解决方案：** 为了避免人工主观设定过滤阈值，我使用 **GitHub Copilot** 辅助编写了基于 **IQR (四分位距)** 算法的异常值处理逻辑。
@@ -28,7 +28,7 @@
 
 ---
 
-## 📊 2. 留存率分析 (Bootstrapping & Z-Test)
+## 2. 留存率分析 (Bootstrapping & Z-Test)
 为了评估次日留存（1-day）和 7日留存表现，我使用了两种统计方法进行交叉验证：
 
 ### Bootstrapping (自助法重采样 - 1,000 次)
@@ -41,7 +41,7 @@
 
 ---
 
-## 🚫 3. 结论与建议：不建议上线 (NO-GO)
+## 3. 结论与建议：不建议上线 (NO-GO)
 
 基于上述数据结果，我建议产品团队**放弃该版本更新**，保持原有的 Level 30 关卡设计。
 
